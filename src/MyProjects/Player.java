@@ -98,14 +98,24 @@ public class Player extends JFrame implements ActionListener {
         frame.setVisible(true);
 
     }
-
+    int flag=0;
     @Override
     public void actionPerformed(ActionEvent e) {
 
         if(e.getSource()==select){
+
             music_name = input.getText();
             try {
+                if(flag==1)
+                {
+                    try {
+                        play(3," ");
+                    } catch (UnsupportedAudioFileException  | LineUnavailableException | IOException ex) {
+                        ex.printStackTrace();
+                    }
+                }
                 play(1,music_name);
+                flag = 1;
             } catch (UnsupportedAudioFileException  | LineUnavailableException | IOException ex) {
                 ex.printStackTrace();
             }
