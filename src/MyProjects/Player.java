@@ -154,6 +154,5 @@ public class Player extends JFrame implements ActionListener {
         if(number==4)
             clip.setMicrosecondPosition(0);
     }
-
 }
 
