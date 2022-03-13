@@ -20,5 +20,3 @@ How to use;
 2 -> Click "Select"
 
 3 -> Then hit "Play"
-
-//WARNING// Before you select a new music stop previous music
